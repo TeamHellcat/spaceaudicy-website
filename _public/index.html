@@ -21,50 +21,37 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="css/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-        }
-        body {
-            font-family: sans-serif;
-            background-image: url('bg1.jpg');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            padding: 0;
-        }
-        #logo {
-            max-width: 90%;
-            max-height: 60%;
-            margin: 5vh 0;
-        }
-        .google-play-link {
-            position: absolute;
-            display: block;
-            bottom: 5%;
-            left: 0;
-            right: 0;
-        }
-        .google-play-link img {
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+    <link rel="stylesheet" href="spaceaudicy.css"/>
 </head>
 <body>
     <h1>
-        <img id="logo"
-             alt="Space Audicy"
-             src="logo.png"/>
+        <a href="https://play.google.com/store/apps/details?id=com.Hellkat.SpaceAudicy">
+            <img id="logo"
+                 alt="Space Audicy"
+                 src="logo.png"/>
+        </a>
     </h1>
-    <a class="google-play-link" href="https://play.google.com/store/apps/details?id=com.Hellkat.SpaceAudicy">
-        <img alt="Get it on Google Play"
-             src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
-    </a>
+    <div id="links">
+        <a id="store-link"
+           class="link google-play-link"
+           href="https://play.google.com/store/apps/details?id=com.Hellkat.SpaceAudicy">
+            <img alt="Get it on Google Play"
+                 src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+        </a>
+        <a id="tango-link"
+           class="link powered-by-link"
+           href="https://www.google.com/atap/project-tango/">
+            <img class="powered-by-logo"
+                 alt="Google Project Tango"
+                 src="project-tango-logo_2x.png"/>
+        </a>
+        <a id="unity-link"
+           class="link powered-by-link"
+           href="https://unity3d.com">
+            <img class="powered-by-logo"
+                 alt="Unity"
+                 src="unity-logo-white.png"/>
+        </a>
+    </div>
 </body>
 </html>
