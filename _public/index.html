@@ -1,8 +1,10 @@
 <!doctype html>
 <html>
 <head>
-    <title>Space Audicy | VR</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="title" content="Space Audicy | VR"/>
     <meta name="description" content="Ever wonder what it would be like if a band got stuck in a tornado and you are their means of escaping? Wonder no more! Space Audicy is here (currently for Project Tango)">
+    <title>Space Audicy | VR</title>
     <link rel="apple-touch-icon" sizes="57x57" href="css/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="css/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="css/apple-icon-72x72.png">
@@ -20,33 +22,46 @@
     <meta name="msapplication-TileImage" content="css/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
         body {
             font-family: sans-serif;
-        }
-        .banner {
-            height: 100vh;
-            position: absolute;
-            margin-left: -10px;
-            margin-top: -20px;
-        }
-        .google-play-link {
-            z-index: 2;
-            position: absolute;
-            margin-top: 70vh;
-            width: 100%;
+            background-image: url('bg1.jpg');
+            background-size: cover;
+            background-position: center;
             text-align: center;
         }
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+        #logo {
+            max-width: 90%;
+            max-height: 60%;
+            margin: 5vh 0;
+        }
+        .google-play-link {
+            position: absolute;
+            display: block;
+            bottom: 5%;
+            left: 0;
+            right: 0;
+        }
         .google-play-link img {
+            display: block;
             margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <a href="https://play.google.com/store/apps/details?id=com.Hellkat.SpaceAudicy">
-        <img class="banner" alt="Space Audicy"
-             src="https://lh3.googleusercontent.com/HdRwujpEXcvId0xVYIlMAeYr8hhdfzvglxJtjV4UeG_NtWNmfg1qPiCrbWdIFvGsMOs=h500-rw"/>
-    </a>
-    <h2>Space Audicy</h2>
+    <h1>
+        <img id="logo"
+             alt="Space Audicy"
+             src="logo.png"/>
+    </h1>
     <a class="google-play-link" href="https://play.google.com/store/apps/details?id=com.Hellkat.SpaceAudicy">
         <img alt="Get it on Google Play"
              src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
